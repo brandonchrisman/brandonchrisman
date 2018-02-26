@@ -1,0 +1,151 @@
+// Mixins
+@import "_mixins.sass"
+
+.projectSlide
+  background: $white
+  color: $black
+  display: inline-flex
+  flex: 0 0 50vw
+  max-height: 100vh
+  min-height: 100vh
+  max-width: 50vw
+  min-width: 50vw
+  overflow-y: scroll
+  position: relative
+  transition: all 0.66s cubic-bezier(.666,0,.333,1)
+  width: 50vw
+  +bp('sm')
+    max-width: 100vw
+    min-width: 100vw
+    width: 100vw
+    z-index: 2
+  +bp('xs')
+    max-width: 100vw
+    min-width: 100vw
+    width: 100vw
+    z-index: 2
+  +bp('xxs')
+    max-width: 100vw
+    min-width: 100vw
+    width: 100vw
+    z-index: 2
+
+
+  +el('wrapper')
+    padding: 0 4rem
+    +bp('sm')
+      padding: 0 0 0 60px
+    +bp('xs')
+      padding: 0 0 0 60px
+    +bp('xxs')
+      padding: 0 0 0 60px
+
+  +el('list')
+    list-style-type: none
+
+
+  +el('title')
+    font-family: $sans-serif
+    font-size: 3rem
+    font-weight: 700
+    letter-spacing: -1px
+    text-align: left
+    +bp('sm')
+      font-size: 2.6rem
+      margin: 0.6rem 0 0
+    +bp('xs')
+      font-size: 2.6rem
+      margin: 0.6rem 0 0
+    +bp('xxs')
+      font-size: 2.6rem
+      margin: 0.6rem 0 0
+
+  +el('subheading')
+    font-family: $sans-serif
+    font-size: 1.4rem
+    font-weight: 300
+    letter-spacing: 0.2px
+    margin: 0 0 2rem 0
+    text-align: left
+    +bp('sm')
+      letter-spacing: normal
+      margin: 0 0 1rem
+    +bp('xs')
+      letter-spacing: normal
+      margin: 0 0 1rem
+    +bp('xxs')
+      letter-spacing: normal
+      margin: 0 0 1rem
+
+
+  +el('description')
+    font-family: $sans-serif
+    font-size: 1.1rem
+    font-weight: normal
+    line-height: 1.9rem
+    margin: 0 0 4rem
+    max-width: 75%
+    position: relative
+    text-align: justify
+    &:after
+      background: $primary
+      bottom: -2rem
+      content: ''
+      height: 6px
+      left: 0
+      position: absolute
+      width: 36px
+    +bp('sm')
+      line-height: 1.8rem
+      text-align: left
+      width: 90%
+    +bp('xs')
+      line-height: 1.8rem
+      text-align: left
+      width: 90%
+    +bp('xxs')
+      line-height: 1.8rem
+      text-align: left
+      width: 90%
+
+  +el('url')
+    font-family: $sans-serif
+    margin: 0 0 1.4rem
+    transition: all 0.2s ease-in-out
+    &:hover
+      font-weight: normal
+
+
+  +el('techList')
+    font-family: $sans-serif
+    font-size: 1.1rem
+    list-style-type: none
+    +mod('subList')
+      display: block
+      font-family: $sans-serif
+      font-size: 1.1rem
+      list-style-type: none
+
+  +el('techListItem')
+    margin: 0.3rem auto
+    padding: 0.4rem
+    +mod('subItem')
+      display: inline-block
+      font-size: 1rem
+      margin: 0 0.6rem
+      padding: 0.4rem
+      &:hover
+        cursor: default
+
+  +el('imageList')
+    list-style-type: none
+    margin: 4.4rem auto 3rem
+    +bp('sm')
+      margin: 4rem 30px 3rem -30px
+    +bp('xs')
+      margin: 4rem 30px 3rem -30px
+    +bp('xxs')
+      margin: 4rem 30px 3rem -30px
+
+  +el('video')
+    max-width: 100%

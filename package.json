@@ -1,0 +1,19 @@
+{
+  "name": "brandon2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cssnano": "^2.1.0",
+    "grunt-penthouse": "^0.4.0",
+    "grunt-postcss": "^0.8.0",
+    "pixrem": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

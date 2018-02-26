@@ -1,0 +1,78 @@
+$xxs: "screen and (max-width: 360px)"
+$xxsp2: "screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 360px),screen and (min--moz-device-pixel-ratio: 2) and (max-width: 360px),screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 360px),screen and (min-device-pixel-ratio: 2) and (max-width: 360px),screen and (min-resolution: 192dpi) and (max-width: 360px),screen and (min-resolution: 2dppx) and (max-width: 360px)"
+$xs: "screen and (min-width:361px) and (max-width: 480px)"
+$xsp2: "screen and (-webkit-min-device-pixel-ratio: 2) and (min-width:361px) and (max-width: 480px), screen and (min--moz-device-pixel-ratio: 2) and (min-width:361px) and (max-width: 480px), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width:361px) and (max-width: 480px), screen and (min-device-pixel-ratio: 2) and (min-width:361px) and (max-width: 480px), screen and (min-resolution: 192dpi) and (min-width:361px) and (max-width: 480px), screen and (min-resolution: 2dppx) and (min-width:361px) and (max-width: 480px)"
+$sm: "screen and (min-width: 481px) and (max-width: 768px)"
+$smp2: "screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 481px) and (max-width: 768px), screen and (min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 481px) and (max-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 481px) and (max-width: 768px)"
+$min-md: "screen and (min-width: 769px) and (max-width: 991px)"
+$min-mdp2: "screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px) and (max-width: 991px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 769px) and (max-width: 991px), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 769px) and (max-width: 991px), screen and (min-device-pixel-ratio: 2) and (min-width: 769px) and (max-width: 991px), screen and (min-resolution: 192dpi) and (min-width: 769px) and (max-width: 991px), screen and (min-resolution: 2dppx) and (min-width: 769px) and (max-width: 991px)"
+$md: "screen and (min-width: 992px) and (max-width: 1199px)"
+$mdp2: "screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 992px) and (max-width: 1199px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 992px) and (max-width: 1199px), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 992px) and (max-width: 1199px), screen and (min-device-pixel-ratio: 2) and (min-width: 992px) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (min-width: 992px) and (max-width: 1199px), screen and (min-resolution: 2dppx) and (min-width: 992px) and (max-width: 1199px)"
+$min-lg: "screen and (min-width: 1200px)"
+$lg: "screen and (min-width: 1200px) and (max-width: 1439px)"
+$lgp2: "screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1439px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1439px), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1200px) and (max-width: 1439px), screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1439px), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (max-width: 1439px), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1439px)"
+$lgxl: "screen and (min-width: 1440px) and (max-width: 1919px)"
+$lgxlp2: "screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1440px) and (max-width: 1919px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1440px) and (max-width: 1919px), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1440px) and (max-width: 1919px), screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) and (max-width: 1919px), screen and (min-resolution: 192dpi) and (min-width: 1440px) and (max-width: 1919px), screen and (min-resolution: 2dppx) and (min-width: 1440px) and (max-width: 1919px)"
+$xl: "screen and (min-width: 1920px)"
+$xlp2: "screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1920px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1920px), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1920px), screen and (min-device-pixel-ratio: 2) and (min-width: 1920px), screen and (min-resolution: 192dpi) and (min-width: 1920px), screen and (min-resolution: 2dppx) and (min-width: 1920px)"
+
+=el($element)
+  &__#{$element}
+    @content
+
+=mod($modifier)
+  &--#{$modifier}
+    @content
+
+=bp($point)
+  @if $point == xl
+    @media #{$xl}
+      @content
+  @else if $point == xlp2
+    @media #{$xlp2}
+      @content
+  @else if $point == lgxl
+    @media #{$lgxl}
+      @content
+  @else if $point == lgxlp2
+    @media #{$lgxlp2}
+      @content
+  @else if $point == lg
+    @media #{$lg}
+      @content
+  @else if $point == lgp2
+    @media #{$lgp2}
+      @content
+  @else if $point == min-md
+    @media #{$min-md}
+      @content
+  @else if $point == min-mdp2
+    @media #{$min-mdp2}
+      @content
+  @else if $point == md
+    @media #{$md}
+      @content
+  @else if $point == mdp2
+    @media #{$mdp2}
+      @content
+  @else if $point == min-lg
+    @media #{$min-lg}
+      @content
+  @else if $point == sm
+    @media #{$sm}
+      @content
+  @else if $point == smp2
+    @media #{$smp2}
+      @content
+  @else if $point == xs
+    @media #{$xs}
+      @content
+  @else if $point == xsp2
+    @media #{$xsp2}
+      @content
+  @else if $point == xxs
+    @media #{$xxs}
+      @content
+  @else if $point == xxsp2
+    @media #{$xxsp2}
+      @content

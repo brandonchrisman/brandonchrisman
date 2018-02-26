@@ -1,0 +1,128 @@
+#bc-circle-crust
+  fill: $black
+#bc-circle-mantle
+  fill: $white
+#bc-circle-core
+  fill: $primary
+
+@keyframes spinning
+  50%
+    stroke-dashoffset: 930px
+  0%, 100%
+    stroke-dashoffset: 0px
+
+
+@keyframes spinning2
+  50%
+    stroke-dashoffset: 1488px
+  0%, 100%
+    stroke-dashoffset: 0px
+
+
+@keyframes spinning3
+  50%
+    stroke-dashoffset: 1200px
+  0%, 100%
+    stroke-dashoffset: 0px
+
+
+@keyframes loadedOrange
+  from
+    fill: transparent
+  to
+    fill: $primary
+
+
+@keyframes loadedBlack
+  from
+    fill: transparent
+  to
+    fill: $black
+
+@keyframes loadedWhite
+  from
+    fill: transparent
+  to
+    fill: $white
+
+
+@keyframes shrink
+  from
+    opacity: 1
+    transform: scale(1)
+  to
+    opacity: 0
+    transform: scale(0)
+
+
+@keyframes fadeUp
+  0%
+    opacity: 1
+    transform: translateY(0px)
+  100%
+    opacity: 0
+    transform: translateY(-105vh)
+
+
+#loader
+  background: $primary
+  height: 100vh
+  overflow: hidden
+  position: absolute
+  transition: background 0.6s $ease-in-fast-out
+  width: 100vw
+  z-index: 5
+
+#logo
+  bottom: 0
+  left: 0
+  margin: auto
+  overflow: visible
+  position: absolute
+  right: 0
+  top: 0
+
+#logo *
+  transform-origin: center
+
+.fadeUp
+  animation: fadeUp 1s $ease-in-fast-out 0.7s 1 forwards
+  #bc-circles path
+    &:nth-child(1)
+      animation: shrink 0.6s $ease-in-fast-out 0.3s 1 forwards
+    &:nth-child(2)
+      animation: shrink 0.6s $ease-in-fast-out 0.25s 1 forwards
+    &:nth-child(3)
+      animation: shrink 0.6s $ease-in-fast-out 0.2s 1 forwards
+  #bc-letters
+    animation: shrink 0.6s $ease-in-fast-out 0s 1 forwards
+
+.loading
+  #bc-circle-crust
+    animation: spinning 5s ease infinite
+    fill: transparent
+    stroke: $white
+    stroke-dasharray: 470px
+    stroke-width: 8px
+  #bc-circle-mantle
+    animation: spinning2 4.5s ease 0s infinite
+    fill: transparent
+    stroke: $black
+    stroke-dasharray: 440px
+    stroke-width: 8px
+  #bc-circle-core
+    animation: spinning3 4s ease 0s infinite
+    fill: transparent
+    stroke: $white
+    stroke-dasharray: 420px
+    stroke-width: 8px
+
+.loaded
+  #bc-circle-crust
+    animation: loadedBlack 0.6s $ease-in-fast-out 0s 1
+  #bc-circle-mantle
+    animation: loadedWhite 0.6s $ease-in-fast-out 0s 1
+  #bc-circle-core
+    animation: loadedOrange 0.6s $ease-in-fast-out 0s 1
+  #loader
+    background: $white

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Brandon Chrisman - Web Developer</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="leftSlide" id="leftSlide">
+        <div class="leftSlide__wrapper">
+          <div class="leftSlide__logoNavContainer">
+            <div>
+              <h1 class="leftSlide__logo">Brandon Chrisman</h1>
+              <span class="leftSlide__subheading">Web Developer &amp; Designer</span>
+            </div>
+          </div>
+          <div class="leftSlide__projectWrapper">
+            <div class="leftSlide__titleSpot" id="leftSlide__titleSpot">
+              <ul class="leftSlide__projectTitleList">
+                <li class="leftSlide__projectTitleItem">
+                  <div class="title-container">
+                    <h2 class="leftSlide__projectHeader">Smoogs</h2>
+                  </div>
+                </li>
+                <li class="leftSlide__projectTitleItem">
+                  <div class="title-container">
+                    <h2 class="leftSlide__projectHeader">CharlieCo</h2>
+                  </div>
+                </li>
+                <li class="leftSlide__projectTitleItem">
+                  <div class="title-container">
+                    <h2 class="leftSlide__projectHeader">SomeThing</h2>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="leftSlide__descriptionSpot">
+              <ul class="leftSlide__projectDescriptionList">
+                <li class="leftSlide__projectDescriptionItem">
+                  <div class="description-container">
+                    <p class="leftSlide__projectDescription">Design &amp; Development</p>
+                  </div>
+                </li>
+                <li class="leftSlide__projectDescriptionItem">
+                  <div class="description-container">
+                    <p class="leftSlide__projectDescription">Wordpress Theme Customization</p>
+                  </div>
+                </li>
+                <li class="leftSlide__projectDescriptionItem">
+                  <div class="description-container">
+                    <p class="leftSlide__projectDescription">Wordpress Theme Customization</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightSlide" id="rightSlide">
+        <div class="rightSlide__wrapper">
+          <div class="rightSlide__button arrow" id="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.1 48.1" width="48" height="48" class="rightSlide__arrow">
+              <polygon fill="#fafafa" points="33.3,29.6 39,24 39,24 39,24 33.3,18.4 33.3,18.4 14.7,0 9,5.6 27.6,24 9,42.4 14.7,48
+                33.3,29.6">
+              	<animate id="morph-to-close" begin="indefinite" fill="freeze" attributeName="points" dur="230ms" to="48.1,5.7 42.4,0 24,18.4 5.7,0 0,5.7 18.4,24 0,42.4 5.7,48.1 24,29.7 42.4,48.1 48.1,42.4 29.7,24"/>
+                <animate id="morph-to-arrow" begin="indefinite" fill="freeze" attributeName="points" dur="230ms" to="33.3,29.6 39,24 39,24 39,24 33.3,18.4 33.3,18.4 14.7,0 9,5.6 27.6,24 9,42.4 14.7,48 33.3,29.6"/>
+              </polygon>
+            </svg>
+          </div>
+          <div class="rightSlide__background" style="background: url('img/smoogs-web.png')" id="rightSlideBg"></div>
+        </div>
+      </div>
+      <div class="projectSlide" id="projectSlide">
+        <div class="projectSlide__wrapper">
+          <ul class="projectSlide__list">
+            <li class="projectSlide__listItem">
+              <div class="projectSlide__container">
+                <h2 class="projectSlide__title">Smoogs</h2>
+                <div class="projectSlide__subheading">Design &amp; Development</div>
+                <div class="projectSlide__description">Smoogs is a micropayment solution for digital content creators. This is an ongoing long term commitment for me. I work with these folks part time. I am responsible for the design both for the web and media players and maintaining the site ie. adding and removing content.</div>
+                <div class="projectSlide__url"><a class="projectSlide__url" href="https://smoogs.io/" target="_blank">Visit website</a></div>
+                <div class="projectSlide__tech">
+                  <h3>Technology Used</h3>
+                  <ul>
+                    <li>
+                      <strong>CMS:</strong> Grav
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+                      <strong>HTML 5, CSS 3, JS</strong>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="projectSlide__images">
+                  <ul class="projectSlide__imageList">
+                    <li class="projectSlide__imageItem">
+                      <video autoplay="true" loop="true" width="100%">
+                        <source src="vid/smoogsloader.ogg" type="video/ogg" />
+                        <source src="vid/smoogsloader.webm" type="video/webm" />
+                        <source src="vid/smoogsloader.mp4" type="video/mp4" />
+                      </video>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Lato:100,300,400,700,900" rel="stylesheet">
+    <script src="js/button.js" type="text/javascript"></script>
+    <script src="js/replacr.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.addEventListener('load', bindButtonClick, false);
+    </script>
+  </body>
+
+</html>
