@@ -1,6 +1,5 @@
-// Mixins
-@import "_mixins.sass"
 $smoogs: "smoogs-web"
+$entrision: "entrision-web"
 
 #arrow
   fill: none
@@ -11,14 +10,7 @@ $smoogs: "smoogs-web"
 .rightSlide
   background: darken($white, 8%)
   display: inline-flex
-  flex: 0 0 50vw
-  min-height: 100vh
-  max-height: 100vh
-  max-width: 50vw
-  min-width: 50vw
   position: relative
-  transition: all 0.66s cubic-bezier(.666,0,.333,1)
-  width: 50vw
   +bp('sm')
     z-index: 3
   +bp('xs')
@@ -101,14 +93,18 @@ $smoogs: "smoogs-web"
       max-height: 14px
       max-width: 14px
 
-  +el('background')
+  +el('imageList')
+    height: 100vh
+    list-style-type: none
+    transition: all 0.66s cubic-bezier(.666,0,.333,1)
+    width: 50vw
+
+  +el('imageListItem')
     background-repeat: no-repeat !important
     background-size: cover !important
     height: 100%
-    transition: all 0.5s ease
     width: 100%
     +mod('smoogs')
-      background-image: url('../img/projects/smoogs/main/#{$smoogs}-blurred.png')
       +bp('xl')
         background-image: url('../img/projects/smoogs/main/#{$smoogs}.png')
       +bp('lgxl')
@@ -140,6 +136,37 @@ $smoogs: "smoogs-web"
       +bp('xxsp2')
         background-image: url('../img/projects/smoogs/main/#{$smoogs}-992.png')
 
+    +mod('entrision')
+      +bp('xl')
+        background-image: url('../img/projects/entrision/main/#{$entrision}.png')
+      +bp('lgxl')
+        background-image: url('../img/projects/entrision/main/#{$entrision}-1920.png')
+      +bp('lgxlp2')
+        background-image: url('../img/projects/entrision/main/#{$entrision}.png')
+      +bp('lg')
+        background-image: url('../img/projects/entrision/main/#{$entrision}-1440.png')
+      +bp('lgp2')
+        background-image: url('../img/projects/entrision/main/#{$entrision}.png')
+      +bp('md')
+        background-image: url('../img/projects/entrision/main/#{$entrision}-1200.png')
+      +bp('mdp2')
+        background-image: url('../img/projects/entrision/main/#{$entrision}.png')
+      +bp('min-md')
+        background-image: url('../img/projects/entrision/main/#{$entrision}-992.png')
+      +bp('min-mdp2')
+        background-image: url('../img/projects/entrision/main/#{$entrision}-1920.png')
+      +bp('sm')
+        background-image: url('../img/projects/entrision/main/#{$entrision}-768.png')
+      +bp('smp2')
+        background-image: url('../img/projects/entrision/main/#{$entrision}-1440.png')
+      +bp('xs')
+        background-image: url('../img/projects/entrision/main/#{$entrision}-480.png')
+      +bp('xsp2')
+        background-image: url('../img/projects/entrision/main/#{$entrision}-1200.png')
+      +bp('xxs')
+        background-image: url('../img/projects/entrision/main/#{$entrision}-360.png')
+      +bp('xxsp2')
+        background-image: url('../img/projects/entrision/main/#{$entrision}-992.png')
 
   +el('titleSpot')
     height: 2rem
