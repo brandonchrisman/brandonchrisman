@@ -1,5 +1,6 @@
 $smoogs: "smoogs-web"
 $entrision: "entrision-web"
+$charlieco: "charlieco-web"
 
 #arrow
   fill: none
@@ -12,10 +13,13 @@ $entrision: "entrision-web"
   display: inline-flex
   position: relative
   +bp('sm')
+    width: 50vw
     z-index: 3
   +bp('xs')
+    width: 50vw
     z-index: 3
   +bp('xxs')
+    width: 50vw
     z-index: 3
 
 
@@ -167,6 +171,38 @@ $entrision: "entrision-web"
         background-image: url('../img/projects/entrision/main/#{$entrision}-360.png')
       +bp('xxsp2')
         background-image: url('../img/projects/entrision/main/#{$entrision}-992.png')
+
+    +mod('charlieco')
+      +bp('xl')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}.png')
+      +bp('lgxl')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}-1920.png')
+      +bp('lgxlp2')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}.png')
+      +bp('lg')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}-1440.png')
+      +bp('lgp2')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}.png')
+      +bp('md')
+        background-image: url('../img/projects/echarlieco/main/#{$charlieco}-1200.png')
+      +bp('mdp2')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}.png')
+      +bp('min-md')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}-992.png')
+      +bp('min-mdp2')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}-1920.png')
+      +bp('sm')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}-768.png')
+      +bp('smp2')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}-1440.png')
+      +bp('xs')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}-480.png')
+      +bp('xsp2')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}-1200.png')
+      +bp('xxs')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}-360.png')
+      +bp('xxsp2')
+        background-image: url('../img/projects/charlieco/main/#{$charlieco}-992.png')
 
   +el('titleSpot')
     height: 2rem

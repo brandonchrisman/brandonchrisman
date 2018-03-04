@@ -30,7 +30,8 @@ ul, li {
   background: #fafafa;
   display: inline-flex;
   position: relative;
-  transition: all 0.66s cubic-bezier(0.666, 0, 0.333, 1); }
+  transition: all 0.66s cubic-bezier(0.666, 0, 0.333, 1);
+  width: 50vw; }
   .leftSlide__wrapper {
     align-items: center;
     display: flex;
@@ -243,12 +244,15 @@ ul, li {
   position: relative; }
   @media screen and (min-width: 481px) and (max-width: 768px) {
     .rightSlide {
+      width: 50vw;
       z-index: 3; } }
   @media screen and (min-width: 361px) and (max-width: 480px) {
     .rightSlide {
+      width: 50vw;
       z-index: 3; } }
   @media screen and (max-width: 360px) {
     .rightSlide {
+      width: 50vw;
       z-index: 3; } }
   .rightSlide__wrapper {
     align-items: center;
@@ -425,6 +429,51 @@ ul, li {
     @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 360px), screen and (min--moz-device-pixel-ratio: 2) and (max-width: 360px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 360px), screen and (min-device-pixel-ratio: 2) and (max-width: 360px), screen and (min-resolution: 192dpi) and (max-width: 360px), screen and (min-resolution: 2dppx) and (max-width: 360px) {
       .rightSlide__imageListItem--entrision {
         background-image: url("../img/projects/entrision/main/entrision-web-992.png"); } }
+    @media screen and (min-width: 1920px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web.png"); } }
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web-1920.png"); } }
+    @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1440px) and (max-width: 1919px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1440px) and (max-width: 1919px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 1440px) and (max-width: 1919px), screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) and (max-width: 1919px), screen and (min-resolution: 192dpi) and (min-width: 1440px) and (max-width: 1919px), screen and (min-resolution: 2dppx) and (min-width: 1440px) and (max-width: 1919px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web.png"); } }
+    @media screen and (min-width: 1200px) and (max-width: 1439px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web-1440.png"); } }
+    @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1439px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1439px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 1200px) and (max-width: 1439px), screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1439px), screen and (min-resolution: 192dpi) and (min-width: 1200px) and (max-width: 1439px), screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1439px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web.png"); } }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/echarlieco/main/charlieco-web-1200.png"); } }
+    @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 992px) and (max-width: 1199px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 992px) and (max-width: 1199px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 992px) and (max-width: 1199px), screen and (min-device-pixel-ratio: 2) and (min-width: 992px) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (min-width: 992px) and (max-width: 1199px), screen and (min-resolution: 2dppx) and (min-width: 992px) and (max-width: 1199px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web.png"); } }
+    @media screen and (min-width: 769px) and (max-width: 991px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web-992.png"); } }
+    @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px) and (max-width: 991px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 769px) and (max-width: 991px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 769px) and (max-width: 991px), screen and (min-device-pixel-ratio: 2) and (min-width: 769px) and (max-width: 991px), screen and (min-resolution: 192dpi) and (min-width: 769px) and (max-width: 991px), screen and (min-resolution: 2dppx) and (min-width: 769px) and (max-width: 991px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web-1920.png"); } }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web-768.png"); } }
+    @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 481px) and (max-width: 768px), screen and (min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 481px) and (max-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 481px) and (max-width: 768px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web-1440.png"); } }
+    @media screen and (min-width: 361px) and (max-width: 480px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web-480.png"); } }
+    @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 361px) and (max-width: 480px), screen and (min--moz-device-pixel-ratio: 2) and (min-width: 361px) and (max-width: 480px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 361px) and (max-width: 480px), screen and (min-device-pixel-ratio: 2) and (min-width: 361px) and (max-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 361px) and (max-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 361px) and (max-width: 480px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web-1200.png"); } }
+    @media screen and (max-width: 360px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web-360.png"); } }
+    @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 360px), screen and (min--moz-device-pixel-ratio: 2) and (max-width: 360px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 360px), screen and (min-device-pixel-ratio: 2) and (max-width: 360px), screen and (min-resolution: 192dpi) and (max-width: 360px), screen and (min-resolution: 2dppx) and (max-width: 360px) {
+      .rightSlide__imageListItem--charlieco {
+        background-image: url("../img/projects/charlieco/main/charlieco-web-992.png"); } }
   .rightSlide__titleSpot {
     height: 2rem;
     max-height: 2rem;
